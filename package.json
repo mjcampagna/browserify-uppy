@@ -1,0 +1,19 @@
+{
+  "name": "browserify-uppy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify src/index.js -o dist/uppy.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@uppy/core": "^1.1.0",
+    "@uppy/dashboard": "^1.1.0",
+    "@uppy/tus": "^1.2.0",
+    "browserify": "^16.2.3"
+  },
+  "dependencies": {}
+}
