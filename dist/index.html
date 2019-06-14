@@ -2,13 +2,15 @@
 <html>
   <head>
     <title>Hello Uppy</title>
-		<link href="https://transloadit.edgly.net/releases/uppy/v1.2.0/uppy.min.css" rel="stylesheet">
-
   </head>
   <body>
-	<script>var endpoint = 'http://localhost:9967/upload';</script>
-    <script src="uppy.js"></script>
-		
-	<div id="uppy-app">
+		<div id="uppy-app" />
+		<script>var endpoint = 'http://localhost:9967/upload';</script>
+		<script src="uppy.js"></script>
+		<script>
+			const uppy = Uppy.Core()
+			uppy.use(Uppy.Dashboard, { target: '#uppy-app' })
+
+		</script>
   </body>
 </html>
